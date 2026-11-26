@@ -415,14 +415,13 @@ a {
   font-size: var(--fs-hero);
   font-weight: var(--fw-black);
   letter-spacing: -0.05em;
-  line-height: 1.05;
+  line-height: 0.96;
 }
 
 .hero h1 em {
   font-style: italic;
   color: var(--color-pink);
-  padding-left: 0.08em;
-  padding-right: 0.3em;
+  padding: 0 0.16em;
 }
 
 .hero-lead {
@@ -440,8 +439,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  align-self: start;
+  justify-self: start;
+  justify-content: start;
   gap: 0.7rem;
+  width: max-content;
+  max-width: 100%;
   margin-top: 1.5rem;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .hero-actions .btn {
@@ -1596,10 +1602,13 @@ a {
 .final-actions {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 0.75rem;
+  width: max-content;
+  max-width: 100%;
   margin-top: 2rem;
+  margin-inline: auto;
 }
 
 .final-actions a[href*="instagram"].btn {
@@ -1758,9 +1767,15 @@ body.lightbox-open .float-cta {
 @media (max-width: 639px) {
   .hero-actions {
     display: grid;
+    grid-template-columns: max-content;
+    justify-content: start;
+    justify-items: stretch;
+    justify-self: start;
+    align-self: start;
     width: max-content;
     max-width: 100%;
-    margin-inline: auto;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .hero-actions .btn {
@@ -1773,6 +1788,7 @@ body.lightbox-open .float-cta {
 @media (min-width: 640px) {
   .final-actions {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .hero-actions {
@@ -1780,9 +1796,13 @@ body.lightbox-open .float-cta {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     align-items: center;
+    justify-content: start;
+    justify-self: start;
+    align-self: start;
     width: max-content;
     max-width: 100%;
-    margin-inline: auto;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .hero-actions .btn {
