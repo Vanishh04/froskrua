@@ -120,7 +120,7 @@
       '<span class="poster-slash" aria-hidden="true"></span>' +
       '<span class="poster-ring" aria-hidden="true"></span>' +
       '<p class="poster-age">' + esc(SITE.brand.ageRange) + "<small>років</small></p>" +
-      '<p class="poster-foot"><span>' + esc(SITE.brand.posterLabel) + "</span><span>" + esc(SITE.brand.name) + "</span></p>"
+      '<p class="poster-foot"><span>' + esc(SITE.brand.name) + "</span><span>" + esc(SITE.brand.posterLabel) + "</span></p>"
     );
   }
 

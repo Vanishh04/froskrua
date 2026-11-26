@@ -493,18 +493,14 @@ a {
 
 .poster-kicker {
   top: 1.15rem;
-  left: 50%;
-  width: max-content;
-  max-width: calc(100% - 2.3rem);
+  left: 1.15rem;
   margin: 0;
-  padding: 0.45rem 0.75rem 0.45rem calc(0.75rem + 0.12em);
-  transform: translateX(-50%);
+  padding: 0.45rem 0.75rem;
   border-radius: var(--radius-pill);
   background: var(--color-white);
   font-size: 0.78rem;
   font-weight: var(--fw-black);
   letter-spacing: 0.12em;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -566,8 +562,8 @@ a {
   text-transform: uppercase;
 }
 
-.poster-foot span:last-child {
-  font-size: 1.05rem;
+.poster-foot span:first-child {
+  font-size: 0.9rem;
   font-weight: var(--fw-black);
   font-style: italic;
   letter-spacing: -0.05em;
@@ -1761,10 +1757,10 @@ body.lightbox-open .float-cta {
 
 @media (max-width: 639px) {
   .hero-actions {
-    display: inline-grid;
-    justify-self: start;
+    display: grid;
     width: max-content;
     max-width: 100%;
+    margin-inline: auto;
   }
 
   .hero-actions .btn {
@@ -1780,12 +1776,13 @@ body.lightbox-open .float-cta {
   }
 
   .hero-actions {
-    display: inline-grid;
+    display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     align-items: center;
     width: max-content;
     max-width: 100%;
+    margin-inline: auto;
   }
 
   .hero-actions .btn {
